@@ -110,6 +110,55 @@
             padding: 8px 14px;
             border-radius: 20px;
         }
+        .projects-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .projects-section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .projects-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 800px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -201,53 +250,84 @@
         </div>
 
     </section>
-    <section id="projects">
+    <section id="projects" class="projects-section">
 
         <h2>Projects</h2>
 
-        <div>
-            <h3>UniversityConnect</h3>
+        <p class="projects-intro">
+            A collection of software engineering, programming, and web
+            development projects.
+        </p>
 
-            <p>
-                A university student information system designed to manage
-                students, courses, instructors, registration, and grades.
-            </p>
 
-            <p>
-                <strong>Technologies:</strong>
-                Java, UML, Software Engineering
-            </p>
-        </div>
+        <div class="project-grid">
 
-        <div>
-            <h3>Portfolio Website</h3>
+            <!-- Project 1 -->
+            <div class="project-card">
 
-            <p>
-                A personal portfolio website created to showcase my education,
-                professional experience, skills, and projects.
-            </p>
+                <h3>UniversityConnect</h3>
 
-            <p>
-                <strong>Technologies:</strong>
-                HTML, CSS, GitHub Pages
-            </p>
-        </div>
+                <p>
+                    A university information system designed to manage students,
+                    courses, instructors, registration, grades, and academic
+                    information.
+                </p>
 
-        <div>
-            <h3>Python Projects</h3>
+                <p>
+                    <strong>Technologies:</strong>
+                    Java, UML, Software Engineering
+                </p>
 
-            <p>
-                Programming projects using Python to explore problem solving,
-                data analysis, and computational thinking.
-            </p>
+            </div>
 
-            <p>
-                <strong>Technologies:</strong>
-                Python, pandas, NumPy
-            </p>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website created to showcase my
+                    education, technical skills, experience, and software
+                    projects.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    HTML, CSS, JavaScript, GitHub Pages
+                </p>
+
+                <a href="https://seoyeon-bot.github.io/"
+                target="_blank">
+                    View Portfolio
+                </a>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card">
+
+                <h3>Python Data Analysis</h3>
+
+                <p>
+                    Python-based projects focused on data analysis,
+                    computational problem-solving, and visualization.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, pandas, NumPy, matplotlib
+                </p>
+
+            </div>
+
         </div>
 
     </section>
 
+    <footer>
+        <p>&copy; 2024 Stella Choi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
