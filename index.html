@@ -35,6 +35,41 @@
         h1 {
             font-size: 42px;
         }
+        .home-section {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .home-content {
+            max-width: 800px;
+        }
+
+        .home-content h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .home-content h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .home-content p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .home-buttons a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
     </style>
 </head>
 
@@ -48,20 +83,29 @@
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Hi, I'm Stella Choi!</h1>
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1>Hi, I'm Stella Choi</h1>
 
-        <h3>Computer Science & Mathematics Teacher</h3>
+            <h2>Computer Science & Mathematics</h2>
 
-        <p>
-            Welcome to my portfolio! I am a Computer Science and Mathematics
-            educator with a passion for programming, technology, and education.
-        </p>
+            <p>
+                Welcome to my portfolio! I am a computer science professional
+                with a strong interest in software development, web technologies,
+                and problem-solving.
+            </p>
 
-        <p>
-            I enjoy creating projects that combine technology, problem-solving,
-            and creativity.
-        </p>
+            <p>
+                I enjoy building projects that combine technology, creativity,
+                and practical solutions.
+            </p>
+
+            <div class="home-buttons">
+                <a href="https://github.com/Seoyeon-bot" target="_blank">
+                    GitHub
+                </a>
+            </div>
+        </div>
     </section>
     <section id="education">
 
