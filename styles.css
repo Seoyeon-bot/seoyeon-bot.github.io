@@ -1,0 +1,154 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+        .home-section {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .home-content {
+            max-width: 800px;
+        }
+
+        .home-content h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .home-content h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .home-content p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .home-buttons a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .education-section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .education-section > h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .education-item,
+        .experience-item {
+            margin-bottom: 40px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .education-item h3,
+        .experience-item h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .education-item h4 {
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skills span {
+            padding: 8px 14px;
+            border-radius: 20px;
+        }
+        .projects-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .projects-section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .projects-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 800px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
